@@ -1,13 +1,14 @@
 function calcular() {
 
-   let valor1 = parseFloat(document.querySelector("#num1").value);
-   let valor2 = parseFloat(document.querySelector("#num2").value); 
-   let oper  = document.querySelector("#selecao").value;
-
+   var valor1 = parseFloat(document.querySelector("#num1"));
+   var valor2 = parseFloat(document.querySelector("#num2")); 
+   var oper  = document.querySelector("#selecao").value;
+   var resultado
    console.log(valor1);
    console.log(valor2);
    console.log(oper);
 
+   resultado ='';
 }
 
 
@@ -23,10 +24,10 @@ function calcular() {
               resultado = valor1 / valor2;
           }
        }
-       */
+       
     
     document.querySelector("#resultado").innerHTML = resultado
-    //console.log(resultado)
+    console.log(resultado)
    
    /* const operations = {
       soma: (a,b) => a+b,
